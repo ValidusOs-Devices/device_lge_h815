@@ -1,15 +1,16 @@
 $(call inherit-product, device/lge/h815/full_h815.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/tesla/config/common_full_phone.mk)
-$(call inherit-product, vendor/tesla/config/caf_fw.mk)
+$(call inherit-product, vendor/validus/config/common_full_phone.mk)
+$(call inherit-product, vendor/validus/config/caf_fw.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/tesla/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/validus/config/nfc_enhanced.mk)
 
-PRODUCT_NAME := tesla_h815
+PRODUCT_NAME := validus_h815
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="Adam Ovadia (oadam11)" \
     PRODUCT_DEVICE="g4" \
     PRODUCT_NAME="g4_global_com" \
     BUILD_FINGERPRINT="lge/p1_global_com/p1:6.0/MRA58K/152940055675e:user/release-keys" \
